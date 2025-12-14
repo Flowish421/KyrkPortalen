@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>KyrkPortalen</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- ✅ Primära beroenden -->
+    <PackageReference Include="Azure.Core" Version="1.42.0" />
+    <PackageReference Include="Azure.Identity" Version="1.11.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <!-- 🧹 Full “hard exclude” på Azure/MSAL -->
+  <ItemGroup>
+    <PackageReference Update="Azure.Core" ExcludeAssets="All" />
+    <PackageReference Update="Azure.Identity" ExcludeAssets="All" />
+    <PackageReference Update="Microsoft.Identity.Client" ExcludeAssets="All" />
+    <PackageReference Update="Microsoft.Identity.Client.Extensions.Msal" ExcludeAssets="All" />
+    <PackageReference Update="Microsoft.IdentityModel.Protocols.OpenIdConnect" ExcludeAssets="All" />
+    <PackageReference Update="Microsoft.IdentityModel.Protocols" ExcludeAssets="All" />
+    <PackageReference Update="Microsoft.IdentityModel.Tokens" ExcludeAssets="All" />
+  </ItemGroup>
+
+</Project>

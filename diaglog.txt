@@ -1,0 +1,440 @@
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.360, 842996468716, vstest.console.dll, Version: 17.14.1-release-25411-02 Current process architecture: X64
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.364, 842996508009, vstest.console.dll, Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.9
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.368, 842996545332, vstest.console.dll, Using .Net Framework version:.NETCoreApp,Version=v9.0
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.368, 842996547530, vstest.console.dll, ArtifactProcessingPostProcessModeProcessorExecutor.Initialize: ArtifactProcessingMode.Collect
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.368, 842996549125, vstest.console.dll, TestSessionCorrelationIdProcessorModeProcessorExecutor.Initialize: TestSessionCorrelationId '20348_3d7cceaf-75bf-4105-9df4-f80f9c21352c'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.394, 842996809965, vstest.console.dll, FilePatternParser: The given file C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll is a full path.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.403, 842996898217, vstest.console.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: RuntimeProvider.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestRuntimePluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Host.ITestRuntimeProvider
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.404, 842996911827, vstest.console.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.404, 842996913410, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.404, 842996914083, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.405, 842996923374, vstest.console.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996936636, vstest.console.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996938332, vstest.console.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996938986, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996939584, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996941224, vstest.console.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996942826, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996943598, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.407, 842996944103, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.408, 842996944723, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.408, 842996945176, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.408, 842996945613, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.408, 842996950127, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.408, 842996951476, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.429, 842997161423, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Diagnostics.NETCore.Client: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.431, 842997176658, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.Diagnostics.NETCore.Client, from path: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.432, 842997191781, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.Diagnostics.NETCore.Client, Version=0.2.12.17301, Culture=neutral, PublicKeyToken=31bf3856ad364e35' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.435, 842997218977, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.435, 842997220560, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.435, 842997222800, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Bcl.AsyncInterfaces.dll', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.435, 842997224261, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Bcl.AsyncInterfaces.exe', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997225064, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997226314, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.Bcl.AsyncInterfaces.dll', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997227468, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.Bcl.AsyncInterfaces.exe', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997228061, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Failed to load assembly.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997228704, vstest.console.dll, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997229648, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997230284, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolved from cache.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997231029, vstest.console.dll, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.436, 842997231513, vstest.console.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.437, 842997242834, vstest.console.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.441, 842997277045, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.441, 842997278039, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolved from cache.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.441, 842997278670, vstest.console.dll, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.441, 842997279113, vstest.console.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Warning: 0 : 14516, 2, 2025/12/14, 16:44:04.455, 842997421731, vstest.console.dll, TestPluginDiscoverer: Failed to get types from assembly 'Microsoft.Diagnostics.NETCore.Client, Version=0.2.12.17301, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. Error: System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+   at System.Reflection.RuntimeModule.GetDefinedTypes()
+   at System.Reflection.RuntimeModule.GetTypes()
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromAssembly[TPluginInfo,TExtension](Assembly assembly, Dictionary`2 pluginInfos, String filePath) in /_/src/Microsoft.TestPlatform.Common/ExtensionFramework/TestPluginDiscoverer.cs:line 159
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args) in /_/src/Microsoft.TestPlatform.Common/ExtensionFramework/TestPluginCache.cs:line 514
+   at System.Runtime.Loader.AssemblyLoadContext.GetFirstResolvedAssemblyFromResolvingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingResolvingEvent(IntPtr gchManagedAssemblyLoadContext, AssemblyName assemblyName)
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+TpTrace Warning: 0 : 14516, 2, 2025/12/14, 16:44:04.456, 842997427380, vstest.console.dll, LoaderExceptions: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args) in /_/src/Microsoft.TestPlatform.Common/ExtensionFramework/TestPluginCache.cs:line 514
+   at System.Runtime.Loader.AssemblyLoadContext.GetFirstResolvedAssemblyFromResolvingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingResolvingEvent(IntPtr gchManagedAssemblyLoadContext, AssemblyName assemblyName)
+TpTrace Warning: 0 : 14516, 2, 2025/12/14, 16:44:04.456, 842997428497, vstest.console.dll, LoaderExceptions: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.456, 842997430134, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.456, 842997431752, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.457, 842997441639, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.458, 842997451571, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.BlameDataCollector, from path: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.458, 842997452931, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.460, 842997473779, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.461, 842997474926, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.461, 842997484361, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.463, 842997494765, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.463, 842997495999, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.Extensions.EventLogCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.467, 842997536718, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.467, 842997538374, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.468, 842997547800, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.TestHostRuntimeProvider: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.469, 842997557806, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.TestHostRuntimeProvider, from path: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.469, 842997558971, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.471, 842997582745, vstest.console.dll, GetTestExtensionFromType: Register extension with identifier data 'HostProvider://DefaultTestHost' and type 'Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DefaultTestHostManager, Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.472, 842997586536, vstest.console.dll, GetTestExtensionFromType: Register extension with identifier data 'HostProvider://DotnetTestHost' and type 'Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager, Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.472, 842997588038, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.472, 842997588758, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.473, 842997596799, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.474, 842997608637, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger, from path: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.474, 842997610008, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.476, 842997626358, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.476, 842997627701, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.477, 842997637377, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.478, 842997647988, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, from path: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.478, 842997649135, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997666784, vstest.console.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997668063, vstest.console.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997668621, vstest.console.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997669051, vstest.console.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997669464, vstest.console.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997669855, vstest.console.dll, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997672344, vstest.console.dll, TestPluginCache: TestHosts are 'HostProvider://DefaultTestHost,HostProvider://DotnetTestHost'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.480, 842997673106, vstest.console.dll, TestPluginCache: DataCollectors are ''.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.499, 842997859119, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is starting.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.499, 842997860512, vstest.console.dll, RunTestsArgumentProcessor:Execute: Queuing Test run.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.499, 842997863413, vstest.console.dll, TestRequestManager.RunTests: run tests started.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.501, 842997882397, vstest.console.dll, AssemblyMetadataProvider.GetFrameworkName: Determined framework:'.NETCoreApp,Version=v9.0' for source: 'C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.502, 842997885389, vstest.console.dll, Determined framework for all sources: .NETCoreApp,Version=v9.0
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.504, 842997905311, vstest.console.dll, TestRequestManager.UpdateRunSettingsIfRequired: Default architecture: X64 IsDefaultTargetArchitecture: True, Current process architecture: X64 OperatingSystem: Windows.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.507, 842997936238, vstest.console.dll, AssemblyMetadataProvider.GetArchitecture: Determined architecture:AnyCPU info for assembly: C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.507, 842997937251, vstest.console.dll, Determined platform for source 'C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll' was AnyCPU and it will use the default plaform X64.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.507, 842997937774, vstest.console.dll, None of the sources provided any runnable platform, using the default platform: X64
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.507, 842997939710, vstest.console.dll, Platform was updated to 'X64'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.509, 842997964191, vstest.console.dll, Compatible sources list: 
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.510, 842997965262, vstest.console.dll, C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.513, 842998002173, vstest.console.dll, InferRunSettingsHelper.IsTestSettingsEnabled: Unable to navigate to RunSettings/MSTest. Current node: RunSettings
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.514, 842998010904, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.514, 842998012256, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.514, 842998014459, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Fakes.dll', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.515, 842998015774, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Fakes.exe', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.515, 842998016584, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.515, 842998017876, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.VisualStudio.TestPlatform.Fakes.dll', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.515, 842998019042, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.VisualStudio.TestPlatform.Fakes.exe', returning.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.515, 842998019629, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Fakes: Failed to load assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.515, 842998023690, vstest.console.dll, Failed to load assembly Microsoft.VisualStudio.TestPlatform.Fakes, Version=17.0.0.0, Culture=neutral. Reason:System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.Fakes, Version=17.0.0.0, Culture=neutral, PublicKeyToken=null'. Det går inte att hitta filen.
+File name: 'Microsoft.VisualStudio.TestPlatform.Fakes, Version=17.0.0.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.FakesUtilities.LoadTestPlatformAssembly() in /_/src/Microsoft.TestPlatform.Common/Utilities/FakesUtilities.cs:line 273
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.524, 842998107942, vstest.console.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: TestLogger.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestLoggerPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Client.ITestLogger
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.524, 842998109582, vstest.console.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.524, 842998110278, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.524, 842998110779, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.524, 842998113772, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998114718, vstest.console.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998115343, vstest.console.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998115846, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998116400, vstest.console.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998116858, vstest.console.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998117679, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998118220, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998118885, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998119501, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998119953, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998120387, vstest.console.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\9.0.305\Extensions,C:\Program Files\dotnet\sdk\9.0.305
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.525, 842998121912, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.Diagnostics.NETCore.Client, Version=0.2.12.17301, Culture=neutral, PublicKeyToken=31bf3856ad364e35' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Diagnostics.NETCore.Client.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998135672, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998136657, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolved from cache.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998137181, vstest.console.dll, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998137842, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998138471, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolved from cache.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998138912, vstest.console.dll, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998139316, vstest.console.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.527, 842998141258, vstest.console.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.528, 842998144749, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolving assembly.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.528, 842998145451, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Bcl.AsyncInterfaces: Resolved from cache.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.528, 842998145913, vstest.console.dll, CurrentDomainAssemblyResolve: Resolving assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.528, 842998146323, vstest.console.dll, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.Bcl.AsyncInterfaces'.
+TpTrace Warning: 0 : 14516, 2, 2025/12/14, 16:44:04.528, 842998151078, vstest.console.dll, TestPluginDiscoverer: Failed to get types from assembly 'Microsoft.Diagnostics.NETCore.Client, Version=0.2.12.17301, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. Error: System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+   at System.Reflection.RuntimeModule.GetDefinedTypes()
+   at System.Reflection.RuntimeModule.GetTypes()
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromAssembly[TPluginInfo,TExtension](Assembly assembly, Dictionary`2 pluginInfos, String filePath) in /_/src/Microsoft.TestPlatform.Common/ExtensionFramework/TestPluginDiscoverer.cs:line 159
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args) in /_/src/Microsoft.TestPlatform.Common/ExtensionFramework/TestPluginCache.cs:line 514
+   at System.Runtime.Loader.AssemblyLoadContext.GetFirstResolvedAssemblyFromResolvingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingResolvingEvent(IntPtr gchManagedAssemblyLoadContext, AssemblyName assemblyName)
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+TpTrace Warning: 0 : 14516, 2, 2025/12/14, 16:44:04.528, 842998154009, vstest.console.dll, LoaderExceptions: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args) in /_/src/Microsoft.TestPlatform.Common/ExtensionFramework/TestPluginCache.cs:line 514
+   at System.Runtime.Loader.AssemblyLoadContext.GetFirstResolvedAssemblyFromResolvingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingEvent(AssemblyName assemblyName)
+   at System.Runtime.Loader.AssemblyLoadContext.ResolveUsingResolvingEvent(IntPtr gchManagedAssemblyLoadContext, AssemblyName assemblyName)
+TpTrace Warning: 0 : 14516, 2, 2025/12/14, 16:44:04.529, 842998154924, vstest.console.dll, LoaderExceptions: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. Det går inte att hitta filen.
+File name: 'Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.529, 842998155850, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.530, 842998168627, vstest.console.dll, GetTestExtensionFromType: Register extension with identifier data 'logger://Microsoft/TestPlatform/Extensions/Blame/v1' and type 'Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameLogger, Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.530, 842998169763, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.Extensions.EventLogCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.531, 842998177942, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.532, 842998186184, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.533, 842998197344, vstest.console.dll, GetTestExtensionFromType: Register extension with identifier data 'logger://Microsoft/TestPlatform/HtmlLogger/v1' and type 'Microsoft.VisualStudio.TestPlatform.Extensions.HtmlLogger.HtmlLogger, Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.533, 842998198451, vstest.console.dll, MetadataReaderExtensionsHelper: Discovering extensions inside assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' file path 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998207196, vstest.console.dll, GetTestExtensionFromType: Register extension with identifier data 'logger://Microsoft/TestPlatform/TrxLogger/v1' and type 'Microsoft.VisualStudio.TestPlatform.Extensions.TrxLogger.TrxLogger, Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' inside file 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998208404, vstest.console.dll, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998209401, vstest.console.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998209844, vstest.console.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998210233, vstest.console.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998210613, vstest.console.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998211568, vstest.console.dll, TestPluginCache: Loggers are 'logger://Microsoft/TestPlatform/Extensions/Blame/v1,logger://Microsoft/TestPlatform/HtmlLogger/v1,logger://Microsoft/TestPlatform/TrxLogger/v1'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998212308, vstest.console.dll, TestPluginCache: TestHosts are 'HostProvider://DefaultTestHost,HostProvider://DotnetTestHost'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.534, 842998212849, vstest.console.dll, TestPluginCache: DataCollectors are ''.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.536, 842998224810, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameLogger
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.537, 842998238455, vstest.console.dll, TestEngine: Initializing Parallel Execution as MaxCpuCount is set to: 1
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.539, 842998255814, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DefaultTestHostManager
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.540, 842998267695, vstest.console.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Hosting.DotnetTestHostManager
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.540, 842998271532, vstest.console.dll, TestHostManagerCallbacks.ctor: Forwarding output is enabled.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.541, 842998277196, vstest.console.dll, InferRunSettingsHelper.IsTestSettingsEnabled: Unable to navigate to RunSettings/MSTest. Current node: RunSettings
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.542, 842998287213, vstest.console.dll, ParallelOperationManager.ClearSlots: Clearing all slots. Slots should accept more work: True
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.543, 842998294719, vstest.console.dll, ParallelOperationManager.SetOccupiedSlotCount: Setting slot counts AvailableSlotCount = 1, OccupiedSlotCount = 0.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.543, 842998300782, vstest.console.dll, Occupied slots:
+
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.546, 842998330487, vstest.console.dll, TestEngine.GetExecutionManager: Chosen execution manager 'Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.Parallel.ParallelProxyExecutionManager, Microsoft.TestPlatform.CrossPlatEngine, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' ParallelLevel '1'.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.546, 842998332998, vstest.console.dll, TestPlatform.GetSkipDefaultAdapters: Not skipping default adapters SkipDefaultAdapters was false.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.546, 842998334463, vstest.console.dll, TestRunRequest.ExecuteAsync: Creating test run request.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.547, 842998338452, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.548, 842998353452, vstest.console.dll, TestRunRequest.ExecuteAsync: Starting run with settings:TestRunCriteria:
+   KeepAlive=False,FrequencyOfRunStatsChangeEvent=10,RunStatsChangeEventTimeout=00:00:01.5000000,TestCaseFilter=,TestExecutorLauncher=
+   Settingsxml=<RunSettings>
+  <RunConfiguration>
+    <ResultsDirectory>C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\TestResults</ResultsDirectory>
+    <TargetPlatform>X64</TargetPlatform>
+    <TargetFrameworkVersion>.NETCoreApp,Version=v9.0</TargetFrameworkVersion>
+    <DesignMode>False</DesignMode>
+    <CollectSourceInformation>False</CollectSourceInformation>
+  </RunConfiguration>
+  <LoggerRunSettings>
+    <Loggers>
+      <Logger friendlyName="Microsoft.TestPlatform.MSBuildLogger" assemblyQualifiedName="Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="C:\Program Files\dotnet\sdk\9.0.305\vstest.console.dll" enabled="True">
+        <Configuration>
+          <Verbosity>minimal</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="blame" enabled="True" />
+    </Loggers>
+  </LoggerRunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="blame" enabled="True">
+        <Configuration>
+          <ResultsDirectory>C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\TestResults</ResultsDirectory>
+          <CollectDump DumpType="Full" />
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
+
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.548, 842998354505, vstest.console.dll, TestRunRequest.ExecuteAsync: Wait for the first run request is over.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.549, 842998358118, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRun.TestRunStart: Invoking callbacks was skipped because there are no subscribers.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.550, 842998373443, vstest.console.dll, ParallelProxyExecutionManager: Start execution. Total sources: 1
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.551, 842998377936, vstest.console.dll, ParallelOperationManager.StartWork: Starting adding 1 workloads.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.551, 842998379072, vstest.console.dll, ParallelOperationManager.ClearSlots: Clearing all slots. Slots should accept more work: True
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.551, 842998380093, vstest.console.dll, ParallelOperationManager.SetOccupiedSlotCount: Setting slot counts AvailableSlotCount = 1, OccupiedSlotCount = 0.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.551, 842998380994, vstest.console.dll, Occupied slots:
+
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.553, 842998396284, vstest.console.dll, TestHostManagerCallbacks.ctor: Forwarding output is enabled.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.553, 842998399497, vstest.console.dll, TestRequestSender is acting as server.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.555, 842998417031, vstest.console.dll, ParallelOperationManager.RunWorkInParallel: Adding 1 workload to slot, remaining workloads 0.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.555, 842998418062, vstest.console.dll, ParallelOperationManager.SetOccupiedSlotCount: Setting slot counts AvailableSlotCount = 0, OccupiedSlotCount = 1.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.555, 842998419681, vstest.console.dll, Occupied slots:
+0: C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.557, 842998437220, vstest.console.dll, ParallelOperationManager.RunWorkInParallel: Started host in slot number 0 for work (source): C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.558, 842998450882, vstest.console.dll, ParallelProxyExecutionManager.StartTestRunOnConcurrentManager: Initializing uninitialized client. Started clients: 0
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.558, 842998451544, vstest.console.dll, ParallelOperationManager.RunWorkInParallel: We started 1 work items, which is the max parallel level. Won't start more work.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.558, 842998453008, vstest.console.dll, ParallelOperationManager.RunWorkInParallel: We started 1 work items in here, returning True.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.558, 842998453305, vstest.console.dll, DataCollectionRequestSender.InitializeCommunication : Initialize communication. 
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:04.558, 842998453599, vstest.console.dll, TestRunRequest.ExecuteAsync: Started.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:04.560, 842998469257, vstest.console.dll, TestRunRequest.WaitForCompletion: Waiting with timeout -1.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:04.572, 842998592608, vstest.console.dll, Listening on Endpoint : 127.0.0.1:55807
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.583, 842998694939, vstest.console.dll, DotnetDataCollectionLauncher: Adding  --runtimeconfig "C:\Program Files\dotnet\sdk\9.0.305\datacollector.runtimeconfig.json" in args
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.583, 842998698076, vstest.console.dll, DotnetDataCollectionLauncher: Adding  --depsfile "C:\Program Files\dotnet\sdk\9.0.305\datacollector.deps.json" in args
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.583, 842998703230, vstest.console.dll, DotnetDataCollectionLauncher: Full path of dotnet.exe is C:\Program Files\dotnet\dotnet.exe
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:04.595, 842998820679, vstest.console.dll, ProxyDataCollectionManager.Initialize: Launched datacollector processId: 16436 port: 55807
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:04.595, 842998822649, vstest.console.dll, ProxyDataCollectionManager.Initialize: waiting for connection with timeout: 90 seconds
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.595, 842998823514, vstest.console.dll, DataCollectionRequestSender.WaitForRequestHandlerConnection : Waiting for connection with timeout: 90000
+TpTrace Information: 0 : 14516, 10, 2025/12/14, 16:44:04.818, 843001050429, vstest.console.dll, Using the buffer size of 16384 bytes
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.818, 843001050739, vstest.console.dll, SocketCommunicationManager.WaitForClientConnection took: 222 ms, with 90000 ms timeout, and finished with True.
+TpTrace Information: 0 : 14516, 10, 2025/12/14, 16:44:04.818, 843001052304, vstest.console.dll, Accepted Client request and set the flag
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.818, 843001054395, vstest.console.dll, ProxyDataCollectionManager.InvokeDataCollectionServiceAction: Starting.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:04.819, 843001056080, vstest.console.dll, ProxyDataCollectionManager.BeforeTestRunStart: Get environment variable and port for datacollector processId: 16436 port: 55807
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.819, 843001057822, vstest.console.dll, DataCollectionRequestSender.SendBeforeTestRunStartAndGetResult: Send BeforeTestRunStart message with settingsXml <RunSettings><RunConfiguration><ResultsDirectory>C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\TestResults</ResultsDirectory><TargetPlatform>X64</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v9.0</TargetFrameworkVersion><DesignMode>False</DesignMode><CollectSourceInformation>False</CollectSourceInformation><TestAdaptersPaths>C:\Program Files\dotnet\sdk\9.0.305\Extensions</TestAdaptersPaths></RunConfiguration><LoggerRunSettings><Loggers><Logger friendlyName="Microsoft.TestPlatform.MSBuildLogger" assemblyQualifiedName="Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="C:\Program Files\dotnet\sdk\9.0.305\vstest.console.dll" enabled="True"><Configuration><Verbosity>minimal</Verbosity></Configuration></Logger><Logger friendlyName="blame" enabled="True" /></Loggers></LoggerRunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName="blame" enabled="True"><Configuration><ResultsDirectory>C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\TestResults</ResultsDirectory><CollectDump DumpType="Full" /></Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings> and sources C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll: 
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:04.897, 843001841682, vstest.console.dll, DataCollectionRequestSender.SendBeforeTestRunStartAndGetResult: Received message: (DataCollection.SendMessage) -> {"MessageType":"DataCollection.SendMessage","Payload":{"FriendlyName":null,"Uri":null,"TestCaseId":"00000000-0000-0000-0000-000000000000","Message":"Logging DataCollector Diagnostics in file: C:\\Users\\ahmed\\Desktop\\Assir-KyrkPortalen\\diaglog.datacollector.25-12-14_16-44-04_58259_5.txt","Level":0}}
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.024, 843003113419, vstest.console.dll, DataCollectionRequestSender.SendBeforeTestRunStartAndGetResult: Received message: (DataCollection.BeforeTestRunStartResult) -> {"MessageType":"DataCollection.BeforeTestRunStartResult","Payload":{"EnvironmentVariables":{"COMPlus_DbgEnableElfDumpOnMacOS":"1","COMPlus_DbgEnableMiniDump":"1","COMPlus_DbgMiniDumpType":"4","COMPlus_DbgMiniDumpName":"C:\\Users\\ahmed\\AppData\\Local\\Temp\\91da5f53-e2a2-4fce-9618-785873beb28e\\%e_%p_%t_crashdump.dmp"},"DataCollectionEventsPort":55809}}
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.031, 843003177849, vstest.console.dll, ProxyDataCollectionManager.BeforeTestRunStart: SendBeforeTestRunStartAndGetResult successful, env variable from datacollector: [COMPlus_DbgEnableElfDumpOnMacOS, 1];[COMPlus_DbgEnableMiniDump, 1];[COMPlus_DbgMiniDumpType, 4];[COMPlus_DbgMiniDumpName, C:\Users\ahmed\AppData\Local\Temp\91da5f53-e2a2-4fce-9618-785873beb28e\%e_%p_%t_crashdump.dmp]  and testhost port: 55809
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.031, 843003179510, vstest.console.dll, ProxyDataCollectionManager.InvokeDataCollectionServiceAction: Completed.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.031, 843003180171, vstest.console.dll, ParallelProxyExecutionManager.StartTestRunOnConcurrentManager: Initializing test run. Started clients: 0
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.031, 843003181662, vstest.console.dll, ProxyExecutionManager: Test host is always Lazy initialize.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.032, 843003184737, vstest.console.dll, TestRequestSender.InitializeCommunication: initialize communication. 
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.032, 843003192710, vstest.console.dll, SocketServer.Start: Listening on endpoint : 127.0.0.1:55810
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.033, 843003203301, vstest.console.dll, DotnetTestHostmanager.GetTestHostProcessStartInfo: Platform environment 'X64' target architecture 'X64' framework '.NETCoreApp,Version=v9.0' OS 'Windows'
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.034, 843003207244, vstest.console.dll, DotnetTestHostmanager: Adding  --runtimeconfig "C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.runtimeconfig.json" in args
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.034, 843003209424, vstest.console.dll, DotnetTestHostmanager: Adding  --depsfile "C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.deps.json" in args
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.034, 843003212352, vstest.console.dll, DotnetTestHostmanager.IsWinOnArm: Current PROCESSOR_ARCHITECTURE from environment variable 'AMD64'
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.034, 843003213458, vstest.console.dll, DotnetTestHostmanager.IsWinOnArm: Is Windows on ARM 'False'
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.035, 843003215860, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Extensions.DependencyModel: Resolving assembly.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.035, 843003216896, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Extensions.DependencyModel: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.035, 843003218348, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Extensions.DependencyModel: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Extensions.DependencyModel.dll', returning.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.035, 843003219733, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Extensions.DependencyModel: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.Extensions.DependencyModel.exe', returning.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.035, 843003220419, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Extensions.DependencyModel: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305'.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.036, 843003226023, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.Extensions.DependencyModel: Loading assembly 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.Extensions.DependencyModel.dll'.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.037, 843003235041, vstest.console.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.Extensions.DependencyModel, from path: C:\Program Files\dotnet\sdk\9.0.305\Microsoft.Extensions.DependencyModel.dll
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.037, 843003241625, vstest.console.dll, DotnetTestHostmanager: Runtimeconfig.dev.json C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.runtimeconfig.dev.json does not exist.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.038, 843003245792, vstest.console.dll, DotnetTestHostmanager: Runtimeconfig.dev.json C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.runtimeconfig.dev.json does not exist.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.038, 843003249141, vstest.console.dll, DotnetTestHostManager: Found testhost.dll next to runner executable: C:\Program Files\dotnet\sdk\9.0.305\testhost.dll.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.038, 843003250365, vstest.console.dll, DotnetTestHostmanager: Adding  --additional-deps "C:\Program Files\dotnet\sdk\9.0.305\testhost.deps.json" in args
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.038, 843003251273, vstest.console.dll, DotnetTestHostmanager: Adding  --additionalprobingpath "C:\Program Files\dotnet\sdk\9.0.305" in args
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.038, 843003252154, vstest.console.dll, DotnetTestHostmanager: Current process architetcure 'X64'
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.039, 843003257421, vstest.console.dll, DotnetTestHostmanager.LaunchTestHostAsync: Compatible muxer architecture of running process 'X64' and target architecture 'X64'
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.039, 843003258178, vstest.console.dll, DotnetTestHostmanager: Full path of testhost.dll is C:\Program Files\dotnet\sdk\9.0.305\testhost.dll
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.039, 843003258819, vstest.console.dll, DotnetTestHostmanager: Full path of host exe is C:\Program Files\dotnet\dotnet.exe
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.039, 843003262876, vstest.console.dll, DotnetTestHostManager: Starting process 'C:\Program Files\dotnet\dotnet.exe' with command line 'exec --runtimeconfig "C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.runtimeconfig.json" --depsfile "C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.deps.json" --additional-deps "C:\Program Files\dotnet\sdk\9.0.305\testhost.deps.json" --additionalprobingpath "C:\Program Files\dotnet\sdk\9.0.305" "C:\Program Files\dotnet\sdk\9.0.305\testhost.dll" --port 55810 --endpoint 127.0.0.1:055810 --role client --parentprocessid 14516 --diag "C:\Users\ahmed\Desktop\Assir-KyrkPortalen\diaglog.host.25-12-14_16-44-05_03335_5.txt" --tracelevel 4 --datacollectionport 55809 --telemetryoptedin false'
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.051, 843003382883, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: HostProviderEvents.OnHostLaunched: Invoking callback 1/2 for Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyExecutionManagerWithDataCollection., took 1 ms.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.052, 843003387719, vstest.console.dll, Test Runtime launched
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.052, 843003389008, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: HostProviderEvents.OnHostLaunched: Invoking callback 2/2 for Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager., took 0 ms.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.052, 843003390961, vstest.console.dll, TestRequestSender.WaitForRequestHandlerConnection: waiting for connection with timeout: 90000.
+TpTrace Warning: 0 : 14516, 10, 2025/12/14, 16:44:05.096, 843003834174, vstest.console.dll, TestHostManagerCallbacks.ErrorReceivedCallback Test host standard error line: Error:
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.097, 843003838194, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRunMessageLoggerProxy.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.Common.Logging.InternalTestLoggerEvents., took 0 ms.
+TpTrace Warning: 0 : 14516, 10, 2025/12/14, 16:44:05.097, 843003839396, vstest.console.dll, TestHostManagerCallbacks.ErrorReceivedCallback Test host standard error line:   An assembly specified in the application dependencies manifest (KyrkPortalen.Tests.deps.json) was not found:
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.097, 843003842588, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRunMessageLoggerProxy.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.Common.Logging.InternalTestLoggerEvents., took 0 ms.
+TpTrace Warning: 0 : 14516, 10, 2025/12/14, 16:44:05.097, 843003843441, vstest.console.dll, TestHostManagerCallbacks.ErrorReceivedCallback Test host standard error line:     package: 'Azure.Core', version: '1.38.0'
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.098, 843003845531, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRunMessageLoggerProxy.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.Common.Logging.InternalTestLoggerEvents., took 0 ms.
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.098, 843003846518, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger., took 0 ms.
+TpTrace Warning: 0 : 14516, 10, 2025/12/14, 16:44:05.098, 843003847950, vstest.console.dll, TestHostManagerCallbacks.ErrorReceivedCallback Test host standard error line:     path: 'lib/net6.0/Azure.Core.dll'
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.098, 843003849174, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRunMessageLoggerProxy.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.Common.Logging.InternalTestLoggerEvents., took 0 ms.
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.098, 843003849291, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger., took 0 ms.
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.098, 843003853350, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger., took 0 ms.
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.099, 843003855424, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger., took 0 ms.
+TpTrace Warning: 0 : 14516, 10, 2025/12/14, 16:44:05.099, 843003858033, vstest.console.dll, TestHostManagerCallbacks.ErrorReceivedCallback Test host standard error line: 
+TpTrace Verbose: 0 : 14516, 12, 2025/12/14, 16:44:05.099, 843003858148, vstest.console.dll, TestHostManagerCallbacks.StandardOutputReceivedCallback Test host standard output line: 
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.103, 843003900851, vstest.console.dll, TestHostProvider.ExitCallBack: Host exited starting callback.
+TpTrace Error: 0 : 14516, 10, 2025/12/14, 16:44:05.103, 843003903198, vstest.console.dll, TestHostManagerCallbacks.ExitCallBack: Testhost processId: 3112 exited with exitcode: -2147450740 error: 'Error:
+  An assembly specified in the application dependencies manifest (KyrkPortalen.Tests.deps.json) was not found:
+    package: 'Azure.Core', version: '1.38.0'
+    path: 'lib/net6.0/Azure.Core.dll'
+'
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.103, 843003904039, vstest.console.dll, DotnetTestHostManager.OnHostExited: invoking OnHostExited callback
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.104, 843003904869, vstest.console.dll, CrossPlatEngine.TestHostManagerHostExited: calling on client process exit callback.
+TpTrace Information: 0 : 14516, 10, 2025/12/14, 16:44:05.104, 843003905745, vstest.console.dll, TestRequestSender.OnClientProcessExit: Test host process exited. Standard error: Error:
+  An assembly specified in the application dependencies manifest (KyrkPortalen.Tests.deps.json) was not found:
+    package: 'Azure.Core', version: '1.38.0'
+    path: 'lib/net6.0/Azure.Core.dll'
+
+TpTrace Information: 0 : 14516, 10, 2025/12/14, 16:44:05.104, 843003906674, vstest.console.dll, SocketServer.Stop: Stop server endPoint: 127.0.0.1:55810
+TpTrace Information: 0 : 14516, 10, 2025/12/14, 16:44:05.104, 843003907335, vstest.console.dll, SocketServer.Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.104, 843003906835, vstest.console.dll, TestRequestSender.WaitForRequestHandlerConnection: waiting took 51 ms, with timeout 90000 ms, and result 2, which is failure.
+TpTrace Verbose: 0 : 14516, 10, 2025/12/14, 16:44:05.104, 843003909074, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: HostProviderEvents.OnHostExited: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager., took 0 ms.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.104, 843003909152, vstest.console.dll, Test host failed to start Test host launched:True test host exited: True
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.105, 843003916278, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Resolving assembly.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.105, 843003917458, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions'.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.105, 843003919725, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.CrossPlatEngine.resources.dll', returning.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.105, 843003921550, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Extensions\Microsoft.TestPlatform.CrossPlatEngine.resources.exe', returning.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.105, 843003922286, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Searching in: 'C:\Program Files\dotnet\sdk\9.0.305'.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.105, 843003923484, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.TestPlatform.CrossPlatEngine.resources.dll', returning.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.106, 843003924878, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Assembly path does not exist: 'C:\Program Files\dotnet\sdk\9.0.305\Microsoft.TestPlatform.CrossPlatEngine.resources.exe', returning.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.106, 843003925580, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Failed to load assembly.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.106, 843003929034, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Resolving assembly.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.106, 843003929993, vstest.console.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.CrossPlatEngine.resources: Resolved from cache.
+TpTrace Error: 0 : 14516, 5, 2025/12/14, 16:44:05.107, 843003942788, vstest.console.dll, ProxyExecutionManager.StartTestRun: Failed to start test run: Microsoft.VisualStudio.TestPlatform.ObjectModel.TestPlatformException: Testhost process for source(s) 'C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.dll' exited with error: Error:
+  An assembly specified in the application dependencies manifest (KyrkPortalen.Tests.deps.json) was not found:
+    package: 'Azure.Core', version: '1.38.0'
+    path: 'lib/net6.0/Azure.Core.dll'
+. Please check the diagnostic logs for more information.
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.ThrowOnTestHostExited(IEnumerable`1 sources, Boolean testHostExited) in /_/src/Microsoft.TestPlatform.CrossPlatEngine/Client/ProxyOperationManager.cs:line 524
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyOperationManager.SetupChannel(IEnumerable`1 sources, String runSettings) in /_/src/Microsoft.TestPlatform.CrossPlatEngine/Client/ProxyOperationManager.cs:line 293
+   at Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Client.ProxyExecutionManager.InitializeTestRun(TestRunCriteria testRunCriteria, IInternalTestRunEventsHandler eventHandler) in /_/src/Microsoft.TestPlatform.CrossPlatEngine/Client/ProxyExecutionManager.cs:line 184
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.109, 843003957815, vstest.console.dll, TestRunRequest:SendTestRunMessage: Starting.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.109, 843003960041, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRun.LogMessages: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CommandLine.TestRunResultAggregator., took 0 ms.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.109, 843003960797, vstest.console.dll, TestRunRequest:SendTestRunMessage: Completed.
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.109, 843003961605, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendTestRunMessage: Invoking callback 1/1 for Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger., took 0 ms.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.121, 843004078358, vstest.console.dll, TestRequestSender.EndSession: Sending end session.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.121, 843004080288, vstest.console.dll, ProxyOperationManager.Close: waiting for test host to exit for 100 ms
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.121, 843004081505, vstest.console.dll, SocketServer.Stop: Stop server endPoint: 127.0.0.1:55810
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.121, 843004082108, vstest.console.dll, SocketServer.Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.121, 843004082789, vstest.console.dll, Closing the connection
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.122, 843004088872, vstest.console.dll, ParallelProxyExecutionManager: HandlePartialRunComplete: Total workloads = 1, Total started clients = 1 Total completed clients = 1, Run complete = True, Run canceled: False.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.122, 843004089878, vstest.console.dll, ParallelProxyExecutionManager: HandlePartialRunComplete: All runs completed stopping all managers.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.122, 843004090492, vstest.console.dll, ParallelOperationManager.StopAllManagers: Stopping all managers.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.122, 843004091019, vstest.console.dll, ParallelOperationManager.ClearSlots: Clearing all slots. Slots should accept more work: False
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.122, 843004091839, vstest.console.dll, ParallelOperationManager.SetOccupiedSlotCount: Setting slot counts AvailableSlotCount = 1, OccupiedSlotCount = 0.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.122, 843004092407, vstest.console.dll, Occupied slots:
+
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.147, 843004335433, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendTestRunComplete: Invoking callback 1/2 for Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.MSBuildLogger., took 0 ms.
+TpTrace Verbose: 0 : 14516, 4, 2025/12/14, 16:44:05.147, 843004343864, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: InternalTestLoggerEvents.SendTestRunComplete: Invoking callback 2/2 for Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameLogger., took 0 ms.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.148, 843004348164, vstest.console.dll, TestRunRequest:TestRunComplete: Starting. IsAborted:True IsCanceled:False.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.148, 843004350705, vstest.console.dll, ParallelOperationManager.DoActionOnAllManagers: Calling an action on all managers.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.149, 843004361428, vstest.console.dll, TestLoggerManager.HandleTestRunComplete: Ignoring as the object is disposed.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.149, 843004362664, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRun.TestRunComplete: Invoking callback 1/2 for Microsoft.VisualStudio.TestPlatform.CommandLine.TestRunResultAggregator., took 0 ms.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.150, 843004365278, vstest.console.dll, MulticastDelegateUtilities.SafeInvoke: TestRun.TestRunComplete: Invoking callback 2/2 for Microsoft.VisualStudio.TestPlatform.CommandLine.Processors.RunTestsArgumentExecutor+TestRunRequestEventsRegistrar., took 0 ms.
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.150, 843004366843, vstest.console.dll, TestRunRequest:TestRunComplete: Completed.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.150, 843004367657, vstest.console.dll, ParallelProxyExecutionManager.StartTestRunOnConcurrentManager: Execution starting. Started clients: 1
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:05.150, 843004367205, vstest.console.dll, TestRunRequest.Dispose: Starting.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:05.150, 843004369551, vstest.console.dll, TestRunRequest.Dispose: Completed.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:05.150, 843004370312, vstest.console.dll, TestRequestManager.RunTests: run tests completed.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.150, 843004371332, vstest.console.dll, TestRunRequest:SendTestRunMessage: Starting.
+TpTrace Information: 0 : 14516, 2, 2025/12/14, 16:44:05.150, 843004371518, vstest.console.dll, RunTestsArgumentProcessor:Execute: Test run is completed.
+TpTrace Warning: 0 : 14516, 5, 2025/12/14, 16:44:05.150, 843004372991, vstest.console.dll, TestRunRequest.SendTestRunMessage: Ignoring as the object is disposed.
+TpTrace Verbose: 0 : 14516, 2, 2025/12/14, 16:44:05.151, 843004376029, vstest.console.dll, Executor.Execute: Exiting with exit code of 1
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.151, 843004376258, vstest.console.dll, ProxyExecutionManager: Test host is always Lazy initialize.
+TpTrace Verbose: 0 : 14516, 5, 2025/12/14, 16:44:05.151, 843004378601, vstest.console.dll, TestRequestSender.InitializeCommunication: initialize communication. 
+TpTrace Information: 0 : 14516, 5, 2025/12/14, 16:44:05.151, 843004382540, vstest.console.dll, SocketServer.Start: Listening on endpoint : 127.0.0.1:55811

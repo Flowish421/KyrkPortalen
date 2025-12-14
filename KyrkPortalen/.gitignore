@@ -1,0 +1,61 @@
+# ---- .NET Build Artifacts ----
+bin/
+obj/
+out/
+Debug/
+Release/
+*.exe
+*.dll
+*.pdb
+*.log
+*.cache
+*.deps.json
+*.db
+*.db-shm
+*.db-wal
+
+# ---- Test and Diagnostic Files ----
+TestResults/
+*.trx
+*.coverage
+*.datacollector.*
+*.blame*
+*.txt
+
+# ---- User-specific files ----
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ---- NuGet ----
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+artifacts/
+
+# ---- Node / React ----
+kyrkportalen-client/node_modules/
+kyrkportalen-client/build/
+kyrkportalen-client/.env.local
+kyrkportalen-client/.env.development.local
+kyrkportalen-client/.env.test.local
+kyrkportalen-client/.env.production.local
+
+# ---- Logs ----
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.log
+
+# ---- OS / Editor specific ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp

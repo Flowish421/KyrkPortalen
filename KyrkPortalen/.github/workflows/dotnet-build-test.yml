@@ -1,0 +1,42 @@
+name: .NET Build and Test
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # --- Klonar repo ---
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # --- Installerar .NET SDK ---
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      # --- Återställer beroenden ---
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # --- Bygger projektet ---
+      - name: Build solution
+        run: dotnet build --no-restore --configuration Release
+
+      # --- Kör enhetstester ---
+      - name: Run tests
+        run: dotnet test --no-build --verbosity normal
+
+      # --- Publicerar testresultat (valfritt) ---
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: '**/TestResults/*.trx'
