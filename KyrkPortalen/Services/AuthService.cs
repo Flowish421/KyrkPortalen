@@ -1,4 +1,5 @@
 using KyrkPortalen.Domain.DTOs;
+using BC = BCrypt.Net.BCrypt;
 using KyrkPortalen.Domain.Entities;
 using KyrkPortalen.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -6,8 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Security.Cryptography;
 using System.Text;
+
 
 namespace KyrkPortalen.Services
 {
@@ -22,18 +23,12 @@ namespace KyrkPortalen.Services
             _config = config;
         }
 
-        /// <summary>
-        /// Registrerar en ny användare och returnerar en JWT-token om lyckad.
-        /// </summary>
         public async Task<string?> RegisterAsync(RegisterDTO dto)
         {
-            // Kontrollera om användaren redan finns
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
                 return null;
 
-            // Skapa enkel hash av lösenordet
-            using var sha = SHA256.Create();
-            var passwordHash = Convert.ToBase64String(sha.ComputeHash(Encoding.UTF8.GetBytes(dto.Password)));
+            var passwordHash = BC.HashPassword(dto.Password);
 
             var user = new User
             {
@@ -49,27 +44,25 @@ namespace KyrkPortalen.Services
             return GenerateJwtToken(user);
         }
 
-        /// <summary>
-        /// Loggar in användare och returnerar JWT-token om inloggning lyckas.
-        /// </summary>
         public async Task<string?> LoginAsync(LoginDTO dto)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
-            if (user == null) return null;
+            if (user == null)
+            {
+                Console.WriteLine($"[LOGIN] Ingen användare hittades med e-post: {dto.Email}");
+                return null;
+            }
 
-            // Hasha inmatat lösenord på samma sätt som vid registrering
-            using var sha = SHA256.Create();
-            var hash = Convert.ToBase64String(sha.ComputeHash(Encoding.UTF8.GetBytes(dto.Password)));
+            bool valid = BC.Verify(dto.Password, user.PasswordHash);
+            Console.WriteLine($"[LOGIN] Lösenord giltigt: {valid}");
 
-            if (hash != user.PasswordHash)
+            if (!valid)
                 return null;
 
+            Console.WriteLine($"[LOGIN] Inloggning lyckades för {user.Email}");
             return GenerateJwtToken(user);
         }
 
-        /// <summary>
-        /// Skapar en JWT-token baserad på användarens data.
-        /// </summary>
         private string GenerateJwtToken(User user)
         {
             var claims = new[]

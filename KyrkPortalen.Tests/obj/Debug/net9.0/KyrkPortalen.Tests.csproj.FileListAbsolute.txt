@@ -17,6 +17,7 @@ C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\Ky
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\KyrkPortalen.Tests.pdb
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\BCrypt.Net-Next.dll
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\Castle.Core.dll
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\FluentAssertions.dll
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -152,6 +153,7 @@ C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\Ky
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\KyrkPortalen.Tests.AssemblyInfoInputs.cache
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\KyrkPortalen.Tests.AssemblyInfo.cs
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\KyrkPortalen.Tests.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\KyrkPortalen.Tests.sourcelink.json
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\KyrkPort.590E0EA5.Up2Date
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\KyrkPortalen.Tests.dll
 C:\Users\ahmed\Desktop\Assir-KyrkPortalen\KyrkPortalen.Tests\obj\Debug\net9.0\refint\KyrkPortalen.Tests.dll

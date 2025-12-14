@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KyrkPortalen.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63e6635db999b0d5e5a8c785179d281da3221454")]
 [assembly: System.Reflection.AssemblyProductAttribute("KyrkPortalen.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KyrkPortalen.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

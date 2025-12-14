@@ -1,0 +1,81 @@
+.home-container {
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
+              url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  padding: 5rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #3b2e1e;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Activities section */
+.activities-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+.activities-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #3b2e1e;
+  margin-bottom: 1rem;
+}
+
+.no-activities {
+  color: #777;
+  font-style: italic;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.activity-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.activity-card h3 {
+  margin: 0;
+  color: #4a3728;
+}
+
+.category {
+  color: #7b6d5f;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.desc {
+  color: #555;
+  font-size: 0.95rem;
+}
