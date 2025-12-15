@@ -1,23 +1,40 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using KyrkPortalen.Services;
 using System.Text;
 using KyrkPortalen.Infrastructure.Data;
 using KyrkPortalen.Infrastructure.Repositories;
-using KyrkPortalen.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// DB
+// =====================================
+// DATABASE CONFIGURATION (SQL SERVER)
+// =====================================
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Auth & Repos
-builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
-builder.Services.AddScoped<IActivityService, ActivityService>();
-builder.Services.AddScoped<IAuthService, AuthService>();
+// =====================================
+// DEPENDENCY INJECTION (SERVICES & REPOS)
+// =====================================
 
-// JWT Configuration
+
+
+// 🧩 Repositories
+builder.Services.AddScoped<IActivityRepository, ActivityRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+
+// 🧩 Services
+builder.Services.AddScoped<IActivityService, ActivityService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+
+// =====================================
+// JWT AUTHENTICATION
+// =====================================
 var key = builder.Configuration["Jwt:Key"];
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
@@ -33,24 +50,25 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key!))
     };
 
-    // 👇 Lägg till loggning av tokenfel
+    // 🧩 Logging for JWT errors
     options.Events = new JwtBearerEvents
     {
         OnAuthenticationFailed = context =>
         {
-            Console.WriteLine($"JWT Error: {context.Exception.Message}");
+            Console.WriteLine($"❌ JWT Error: {context.Exception.Message}");
             return Task.CompletedTask;
         },
         OnChallenge = context =>
         {
-            Console.WriteLine("JWT Challenge triggered (token saknas eller ogiltig)");
+            Console.WriteLine("⚠️ JWT Challenge triggered (token saknas eller ogiltig)");
             return Task.CompletedTask;
         }
     };
 });
 
-
-// Add controllers and Swagger with JWT support
+// =====================================
+// CONTROLLERS + SWAGGER (API DOCS)
+// =====================================
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -58,11 +76,12 @@ builder.Services.AddSwaggerGen(c =>
     c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Please insert JWT token into field",
+        Description = "Skriv JWT-token här (utan 'Bearer ' prefix).",
         Name = "Authorization",
         Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
     });
+
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         {
@@ -79,22 +98,29 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// =====================================
+// CORS (Frontend Access)
+// =====================================
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
         policy => policy
-            .WithOrigins("http://localhost:3000")
+            .WithOrigins("http://localhost:3000") // React dev server
             .AllowAnyHeader()
             .AllowAnyMethod()
-            .AllowCredentials()); 
+            .AllowCredentials());
 });
 
-
+// =====================================
+// BUILD THE APP
+// =====================================
 var app = builder.Build();
 
+// =====================================
+// MIDDLEWARE PIPELINE
+// =====================================
 app.UseCors("AllowFrontend");
 
-// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

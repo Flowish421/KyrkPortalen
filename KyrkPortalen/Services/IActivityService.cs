@@ -8,7 +8,7 @@ namespace KyrkPortalen.Services
         Task<ActivityDTO?> GetByIdAsync(int id);
         Task<IEnumerable<ActivityDTO>> GetByUserAsync(int userId);
         Task<ActivityDTO> CreateAsync(int userId, CreateActivityDTO dto);
-        Task<bool> UpdateAsync(int id, int userId, UpdateActivityDTO dto);
-        Task<bool> DeleteAsync(int id, int userId, bool isAdmin);
+        Task<ActivityDTO?> UpdateAsync(int id, int userId, UpdateActivityDTO dto, bool isAdmin = false); // ✅ denna!
+        Task<bool> DeleteAsync(int id, int userId, bool isAdmin = false);
     }
 }

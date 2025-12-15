@@ -1,17 +1,22 @@
 using KyrkPortalen.Domain.DTOs;
 using KyrkPortalen.Domain.Entities;
-using KyrkPortalen.Domain.Enums;
 using KyrkPortalen.Infrastructure.Repositories;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace KyrkPortalen.Services
 {
     public class ActivityService : IActivityService
     {
         private readonly IActivityRepository _repo;
+        private readonly ICategoryRepository _categoryRepo;
 
-        public ActivityService(IActivityRepository repo)
+        public ActivityService(IActivityRepository repo, ICategoryRepository categoryRepo)
         {
             _repo = repo;
+            _categoryRepo = categoryRepo;
         }
 
         public async Task<IEnumerable<ActivityDTO>> GetAllAsync()
@@ -23,7 +28,7 @@ namespace KyrkPortalen.Services
                 Title = a.Title,
                 Description = a.Description,
                 CreatedAt = a.CreatedAt,
-                Category = a.Category.ToString(),
+                Category = a.Category?.Name ?? "Okänd",
                 CreatedBy = a.User?.FullName ?? "Okänd"
             });
         }
@@ -32,13 +37,14 @@ namespace KyrkPortalen.Services
         {
             var a = await _repo.GetByIdAsync(id);
             if (a == null) return null;
+
             return new ActivityDTO
             {
                 Id = a.Id,
                 Title = a.Title,
                 Description = a.Description,
                 CreatedAt = a.CreatedAt,
-                Category = a.Category.ToString(),
+                Category = a.Category?.Name ?? "Okänd",
                 CreatedBy = a.User?.FullName ?? "Okänd"
             };
         }
@@ -52,21 +58,42 @@ namespace KyrkPortalen.Services
                 Title = a.Title,
                 Description = a.Description,
                 CreatedAt = a.CreatedAt,
-                Category = a.Category.ToString(),
+                Category = a.Category?.Name ?? "Okänd",
                 CreatedBy = a.User?.FullName ?? "Okänd"
             });
         }
 
+        //Skapa aktivitet med automatisk kategori
         public async Task<ActivityDTO> CreateAsync(int userId, CreateActivityDTO dto)
         {
-            Enum.TryParse(dto.Category, out ActivityCategory category);
+            var firstWord = dto.Title.Split(' ', System.StringSplitOptions.RemoveEmptyEntries)
+                                     .FirstOrDefault()?.Trim();
+
+            Category? category = null;
+
+            if (!string.IsNullOrEmpty(firstWord))
+            {
+                category = await _categoryRepo.GetByNameAsync(firstWord);
+
+                if (category == null)
+                {
+                    category = new Category
+                    {
+                        Name = firstWord,
+                        Description = $"Automatiskt skapad kategori för '{firstWord}'"
+                    };
+
+                    await _categoryRepo.AddAsync(category);
+                    await _categoryRepo.SaveChangesAsync();
+                }
+            }
 
             var activity = new Activity
             {
                 Title = dto.Title,
                 Description = dto.Description,
                 UserId = userId,
-                Category = category
+                CategoryId = category?.Id
             };
 
             await _repo.AddAsync(activity);
@@ -78,31 +105,72 @@ namespace KyrkPortalen.Services
                 Title = activity.Title,
                 Description = activity.Description,
                 CreatedAt = activity.CreatedAt,
-                Category = activity.Category.ToString(),
+                Category = category?.Name ?? "Ingen kategori",
                 CreatedBy = ""
             };
         }
 
-        public async Task<bool> UpdateAsync(int id, int userId, UpdateActivityDTO dto)
+        //Uppdatera aktivitet (User = egna, Admin = alla)
+        public async Task<ActivityDTO?> UpdateAsync(int id, int userId, UpdateActivityDTO dto, bool isAdmin = false)
         {
             var existing = await _repo.GetByIdAsync(id);
-            if (existing == null || existing.UserId != userId) return false;
+            if (existing == null)
+                return null;
 
-            Enum.TryParse(dto.Category, out ActivityCategory category);
-            existing.Title = dto.Title;
-            existing.Description = dto.Description;
-            existing.Category = category;
+            //Vanlig användare får bara redigera sina egna aktiviteter
+            if (!isAdmin && existing.UserId != userId)
+                return null;
+
+            existing.Title = dto.Title ?? existing.Title;
+            existing.Description = dto.Description ?? existing.Description;
+
+            //Automatisk kategori baserad på titel
+            var firstWord = dto.Title?.Split(' ', System.StringSplitOptions.RemoveEmptyEntries)
+                                      .FirstOrDefault()?.Trim();
+
+            if (!string.IsNullOrEmpty(firstWord))
+            {
+                var category = await _categoryRepo.GetByNameAsync(firstWord);
+                if (category == null)
+                {
+                    category = new Category
+                    {
+                        Name = firstWord,
+                        Description = $"Automatiskt skapad kategori för '{firstWord}'"
+                    };
+                    await _categoryRepo.AddAsync(category);
+                    await _categoryRepo.SaveChangesAsync();
+                }
+
+                existing.CategoryId = category.Id;
+            }
 
             await _repo.UpdateAsync(existing);
             await _repo.SaveChangesAsync();
-            return true;
+
+            var categoryEntity = existing.CategoryId.HasValue
+                ? await _categoryRepo.GetByIdAsync(existing.CategoryId.Value)
+                : null;
+
+            return new ActivityDTO
+            {
+                Id = existing.Id,
+                Title = existing.Title,
+                Description = existing.Description,
+                CreatedAt = existing.CreatedAt,
+                Category = categoryEntity?.Name ?? "Okänd",
+                CreatedBy = ""
+            };
         }
 
+        // Radera aktivitet (Admin = alla, User = egna)
         public async Task<bool> DeleteAsync(int id, int userId, bool isAdmin)
         {
             var existing = await _repo.GetByIdAsync(id);
             if (existing == null) return false;
-            if (!isAdmin && existing.UserId != userId) return false;
+
+            if (!isAdmin && existing.UserId != userId)
+                return false;
 
             await _repo.DeleteAsync(existing);
             await _repo.SaveChangesAsync();

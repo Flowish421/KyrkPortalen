@@ -15,7 +15,8 @@ namespace KyrkPortalen.Domain.Entities
         [Required]
         public string PasswordHash { get; set; } = string.Empty;
 
-        public string Role { get; set; } = "User"; // Default
+        public string Role { get; set; } = "User"; // 
+
 
         public ICollection<Activity> Activities { get; set; } = new List<Activity>();
     }

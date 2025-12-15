@@ -17,13 +17,30 @@ namespace KyrkPortalen.API.Controllers
             _service = service;
         }
 
+        // Om admin är inloggad → ser alla aktiviteter
+        // Om vanlig användare → ser bara sina egna
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var activities = await _service.GetAllAsync();
-            return Ok(activities);
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim))
+                return Unauthorized("User ID missing in token");
+
+            int userId = int.Parse(userIdClaim);
+            bool isAdmin = User.IsInRole("Admin");
+
+            if (isAdmin)
+            {
+                var all = await _service.GetAllAsync();
+                return Ok(all);
+            }
+
+            var mine = await _service.GetByUserAsync(userId);
+            return Ok(mine);
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -32,14 +49,13 @@ namespace KyrkPortalen.API.Controllers
             return Ok(activity);
         }
 
-        // 👇 only logged-in users can create
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateActivityDTO dto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            // 👇 grab userId from JWT claim instead of route
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim))
                 return Unauthorized("User ID missing in token");
@@ -54,32 +70,40 @@ namespace KyrkPortalen.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateActivityDTO dto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim))
                 return Unauthorized("User ID missing in token");
 
             int userId = int.Parse(userIdClaim);
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            bool isAdmin = role == "Admin";
 
-            var updated = await _service.UpdateAsync(id, userId, dto);
-            if (!updated) return Forbid();
-            return NoContent();
+            var updated = await _service.UpdateAsync(id, userId, dto, isAdmin);
+            if (updated == null)
+                return Forbid();
+
+            return Ok(updated);
         }
 
-        // 👇 only admins or owners can delete
+        // User får ta bort sin egen inlägg, Admin får ta bort alla
         [Authorize]
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id, [FromQuery] bool isAdmin = false)
+        public async Task<IActionResult> Delete(int id)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrEmpty(userIdClaim))
                 return Unauthorized("User ID missing in token");
 
             int userId = int.Parse(userIdClaim);
+            bool isAdmin = User.IsInRole("Admin");
 
             var deleted = await _service.DeleteAsync(id, userId, isAdmin);
-            if (!deleted) return Forbid();
+            if (!deleted)
+                return Forbid(); //om användare försöker ta bort någon annans
+
             return NoContent();
         }
     }

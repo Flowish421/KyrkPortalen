@@ -1,21 +1,29 @@
+using System;
 using System.ComponentModel.DataAnnotations;
-using KyrkPortalen.Domain.Enums;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KyrkPortalen.Domain.Entities
 {
     public class Activity
     {
         public int Id { get; set; }
+
         [Required, MaxLength(100)]
         public string Title { get; set; } = string.Empty;
+
         [MaxLength(500)]
         public string Description { get; set; } = string.Empty;
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public ActivityCategory Category { get; set; } = ActivityCategory.General;
 
-        // Relationer
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        // 🔹 Category är nu frivillig
+        public int? CategoryId { get; set; }
+
+        [ForeignKey(nameof(CategoryId))]
+        public Category? Category { get; set; }
+
+        // 🔹 Relation till användare (obligatorisk)
         public int UserId { get; set; }
-        public User? User { get; set; }
+        public User User { get; set; } = null!;
     }
 }

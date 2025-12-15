@@ -65,12 +65,13 @@ namespace KyrkPortalen.Services
 
         private string GenerateJwtToken(User user)
         {
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role)
-            };
+           var claims = new[]
+{
+         new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+         new Claim(ClaimTypes.Email, user.Email),
+         new Claim(ClaimTypes.Role, user.Role) //användare roll
+};
+
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
